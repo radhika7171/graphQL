@@ -1,0 +1,23 @@
+mutation{
+  createCourse(input:{
+    courseName: "graphQL"
+    price : 222
+    stack: WEB
+    teachingAssists :[
+      {
+        firstName: "Radhika"
+        lastName: "Mahajan"
+        experience: 1
+        
+      },
+       {
+        firstName: "Naman"
+        lastName: "Mahajan"
+        experience: 1
+        }
+    ]
+  }){
+    id, 
+    courseName
+  }
+}
